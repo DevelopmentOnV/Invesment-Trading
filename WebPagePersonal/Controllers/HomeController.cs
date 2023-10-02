@@ -89,6 +89,11 @@ namespace WebPagePersonal.Controllers
         
             return View();
         }
+        public ActionResult Businesspartnerrdata()
+        {
+
+            return View();
+        }
         public JsonResult FinancialLiteracy(Postdata FnlTest)
         {
 
