@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EncodeDecode</title>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-8 border pb-3 rounded border-top-0">
+                    <h2 class="text-center text-white bg-success pt-3 pb-4">Encode & Decoder</h2>
+
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" rows="6" placeholder="Type or Paste you text here.." id="dencoder"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-success btn-lg" type="button" onclick="encode()">Encode</button>
+                        <button class="btn btn-danger btn-lg" type="button" onclick="decode()">Decode</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="~/MyJs/EncodeDecode.js"></script>

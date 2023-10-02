@@ -1,0 +1,144 @@
+﻿
+@{
+    Layout = "/_LayoutPage1.cshtml";
+}
+
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Login and Signup Form </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/css/Stylelogin.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jQuery/3.3.1/jQuery.min.js">
+
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Add icon library -->
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    @*<link href="/css/normalize.css" rel="stylesheet">*@
+    @*<link media="all" type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.2/css/select2.css">*@
+    <script type="text/javascript" src="js/script.js"></script>
+    @*<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">*@
+   
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.4.2/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.4.2/sweetalert2.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+   
+    <section style="width:100%; background-color:white;" class="container forms">
+        <!-- Login Form -->
+        <div class="form login" @*style="background-color:mediumaquamarine;"*@>
+            <div class="form-content">
+                <header>Login</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" id="emailloginidforlogin" placeholder="Mobile/Email" maxlength="30" maxlength="40" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" id="passwordvalueforlogin" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="Home/Forgetpasswords" id="Forgetpasswords" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button id="loginpage">Login</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    <h3>@ViewBag.Message</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signup Form -->
+
+        <div class="form signup" @*style="background-color: mediumaquamarine;"*@>
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#" @*style="background-color: mediumaquamarine;"*@>
+                    <div class="field input-field">
+                        <input type="text" id="fullnameidinputd" placeholder="FullName" maxlength="30" maxlength="40" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="text" id="Emailidinputdvalue" placeholder="Email" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="text" id="mobileidinputd" placeholder="Mobile Number" maxlength="30" maxlength="40" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="text" id="stateidinputd" placeholder="State" maxlength="30" maxlength="40" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" id="fistpasswordd" placeholder="Create password" class="password">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" id="Confirmpasswordd" placeholder="Confirm password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <div class="field button-field">
+                        <button id="signupbutton">Signup</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+
+        </div>
+        <div id="succsessfully" style="display: none; right: 115px;left:915px;" class="w3-container w3-center w3-animate-zoom cssvalue">
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <h4 class="alert-heading"><img style="width:25px;" src="~/Images/check (1).png" /></h4>
+                <h4 class="alert-heading">Thank you!</h4>
+                <p>Thanks for signing up. Welcome to our community.</p>
+                <p class="mb-0"></p>
+            </div>
+        </div>
+
+        <!-- Forgot Password -->
+    </section>
+    <style>
+        .xyzfff {
+            position: absolute;
+            bottom: 184px;
+            display:none;
+            background-color:white;
+            height:300px;
+        }
+    </style>
+       
+  
+    <!-- JavaScript -->
+  
+    <script src="~/MyJs/JavaScriptlogin.js"></script>
+    <script src="~/MyJs/InsertForm.js"></script>
+</body>
+</html>
